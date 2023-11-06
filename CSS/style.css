@@ -1,0 +1,389 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    background-color: var(--font-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --font-color: #ffff;
+    --color: #3F2AFF;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1189px;
+    padding: 0;
+}
+
+.btn {
+    padding: 24px 75px;
+    border-radius: 20px;
+    background-color: var(--color);
+    border: none;
+    color: var(--font-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: #4c3af1;
+}
+
+.btn-four:focus-visible {
+    outline: 2px solid #535353;
+}
+
+.btn:hover {
+    background-color: #1a02f0;
+}
+
+
+/* Header */
+
+.header {
+    min-height: 80px;
+    width: 100%;
+    background-color: var(--color);
+}
+
+.header__container {
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px 30px 0px;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list_item {
+    padding-left: 56px;
+}
+
+.nav__item_link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--font-color);
+    transition: color .3s;
+}
+
+.nav__item_link:active {
+    color: #535353;
+}
+
+.nav__item_link:hover {
+    color: #b46fe6;
+}
+
+.header__burger {
+    display: none;
+}
+
+
+/* Section-hero */
+
+.section-hero {
+    background-image: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 12px 0;
+}
+
+.hero__logo {
+    margin-top: 0;
+    margin-bottom: 30px;
+    max-width: 459px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: var(--font-color);
+    cursor: default;
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 70px;
+    max-width: 500px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--font-color);
+    cursor: default;
+}
+
+.hero__image {
+    background-image: url(/IMG/PNG/Group\ 95.png);
+    width: 100%;
+    margin-left: 100px;
+    min-height: 593px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* Section-about */
+
+.section-about {
+    background-color: #E5E5E5;
+    width: 100%;
+    height: 100%;
+}
+
+.section_container {
+    padding: 80px 0px 80px 0px;
+}
+
+.about_content__top {
+    padding-bottom: 30px;
+}
+
+.about_img {
+    background-image: url(/IMG/PNG/Vectary\ texture.png);
+    background-repeat: no-repeat;
+    margin-top: 22px;
+    height: 187px;
+}
+
+.about_logo {
+    margin-top: 0;
+    width: 65%;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #2E2B44;
+    cursor: default;
+}
+
+.about_text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    cursor: default;
+}
+
+.about_list {
+    padding-top: 30px;
+}
+
+.about_list__item {
+    display: flex;
+}
+
+.about_item__text {
+    padding: 0px 0px 0px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+
+.about_list__svg {
+    min-width: 80px;
+    min-height: 80px;
+}
+
+
+/* Section-teachers */
+
+.section-teachers {
+    background-color: #212133;
+}
+
+.section-teachers__container {
+    padding: 80px 0 80px 0;
+}
+
+.teachers_logo {
+    margin: 0;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--font-color);
+}
+
+.teachers_list {
+    margin: 0px;
+}
+
+.teachers_item {
+    padding: 0;
+}
+
+.list__one {
+    padding-right: 30px;
+}
+
+.list__two {
+    padding-right: 30px;
+}
+
+.teachers_item__img {
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+    height: 180px;
+}
+
+.teachers_item__name {
+    margin: 0;
+    padding: 30px 0px 15px 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--font-color);
+}
+
+.teachers_item__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #85859B;
+}
+
+
+/* Section-courses */
+
+.courses_container {
+    padding: 80px 0 50px 0;
+}
+
+.courses_logo {
+    margin: 80px 0 0 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.courses {
+    margin-bottom: 80px;
+}
+
+.courses_list {
+    padding-top: 30px;
+}
+
+.courses_card {
+    background-color: #EDF0F9;
+    border-radius: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.courses_img {
+    border-radius: 24px 24px 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.courses_container {
+    padding: 0 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+
+.courses_card__logo {
+    margin: 30px 0px 15px 0px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #212133;
+}
+
+.courses_card__text {
+    margin: 0 0 49px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.courses_item__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-basis: 100%;
+    padding: 30px;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #2E2B44;
+    min-height: 80px;
+}
+
+.footer_top__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 31px 0px 31px 0px;
+}
+
+.footer_top__item {
+    padding-right: 31px;
+}
+
+.footer_top__svg {
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.footer_top__item svg path:hover {
+    fill: #b46fe6;
+    transition: fill .5s;
+}
+
+.footer_boottom__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
